@@ -1,0 +1,117 @@
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">        
+        <title>Hannelore Dörfler</title>
+        <meta name="Content-language" content="DE">
+        <meta name="Language" content="de, deutsch, german">
+        <link rel="stylesheet" type="text/css" href="css/zinnel.css">
+		
+		<script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+		<script type="text/javascript" src="js/movement.js"></script>
+        <script type="text/javascript" src="js/browsercheck.js"></script>
+        <script type="text/javascript" src="js/function.js"></script>
+        <script type="text/javascript" src="js/popup.js"></script>
+        <script type="text/javascript" src="js/script.js"></script>       
+        <script type="text/javascript" src="js/cards.js"></script>
+		
+    </head>
+    <body onLoad="init();"> 
+		<div style="width:745px; height:570px; border:2px solid  #000;">
+        <div id="page_main" class="page_main">
+            <div id="page_content" class="page_content">
+                <div id="content_main_0" class="content_main">
+                    <div id="content_text_0_form" class="content_text">
+						<div id="tarot_input_reading" class="common_input" style="display: none; "></div>
+						<div id="tarot_tutorial" class="content_text_msg" style="display: block; "><b>Ziehen Sie bitte 1 Karte</b>, indem Sie mit dem Mauszeiger darauf klicken.</div>
+						<div id="tarot_readings" class="content_text_msg" style="display:none;"></div>
+					</div>
+                </div>
+                <div id="pointerdiv" style="position:absolute; width:300px; visibility:hidden; z-index:999;" class="content_text_msg">[default]</div>
+                <div id="tarot_layerframe">
+                <div id="L1" style="position: absolute; z-index: 77; display: block; left: 16px; top: 384px; " onMouseOver="lift_up(1);" onMouseOut="lift_down(1);" onClick="pick_card(1)"><img id="img1" src="back.gif" border="0" alt=""></div>
+                <div id="L2" style="position: absolute; z-index: 76; display: block; left: 22px; top: 384px; " onMouseOver="lift_up(2);" onMouseOut="lift_down(2);" onClick="pick_card(2)"><img id="img2" src="back.gif" border="0" alt=""></div>
+                <div id="L3" style="position: absolute; z-index: 75; display: block; left: 28px; top: 384px; " onMouseOver="lift_up(3);" onMouseOut="lift_down(3);" onClick="pick_card(3)"><img id="img3" src="back.gif" border="0" alt=""></div>
+                <div id="L4" style="position: absolute; z-index: 74; display: block; left: 34px; top: 384px; " onMouseOver="lift_up(4);" onMouseOut="lift_down(4);" onClick="pick_card(4)"><img id="img4" src="back.gif" border="0" alt=""></div>
+                <div id="L5" style="position: absolute; z-index: 73; display: block; left: 40px; top: 384px; " onMouseOver="lift_up(5);" onMouseOut="lift_down(5);" onClick="pick_card(5)"><img id="img5" src="back.gif" border="0" alt=""></div>
+                <div id="L6" style="position: absolute; z-index: 72; display: block; left: 46px; top: 384px; " onMouseOver="lift_up(6);" onMouseOut="lift_down(6);" onClick="pick_card(6)"><img id="img6" src="back.gif" border="0" alt=""></div>
+                <div id="L7" style="position: absolute; z-index: 71; display: block; left: 52px; top: 383px; " onMouseOver="lift_up(7);" onMouseOut="lift_down(7);" onClick="pick_card(7)"><img id="img7" src="back.gif" border="0" alt=""></div>
+                <div id="L8" style="position: absolute; z-index: 70; display: block; left: 58px; top: 383px; " onMouseOver="lift_up(8);" onMouseOut="lift_down(8);" onClick="pick_card(8)"><img id="img8" src="back.gif" border="0" alt=""></div>
+                <div id="L9" style="position: absolute; z-index: 69; display: block; left: 64px; top: 383px; " onMouseOver="lift_up(9);" onMouseOut="lift_down(9);" onClick="pick_card(9)"><img id="img9" src="back.gif" border="0" alt=""></div>
+                <div id="L10" style="position: absolute; z-index: 68; display: block; left: 70px; top: 382px; " onMouseOver="lift_up(10);" onMouseOut="lift_down(10);" onClick="pick_card(10)"><img id="img10" src="back.gif" border="0" alt=""></div>
+                <div id="L11" style="position: absolute; z-index: 67; display: block; left: 76px; top: 382px; " onMouseOver="lift_up(11);" onMouseOut="lift_down(11);" onClick="pick_card(11)"><img id="img11" src="back.gif" border="0" alt=""></div>
+                <div id="L12" style="position: absolute; z-index: 66; display: block; left: 82px; top: 381px; " onMouseOver="lift_up(12);" onMouseOut="lift_down(12);" onClick="pick_card(12)"><img id="img12" src="back.gif" border="0" alt=""></div>
+                <div id="L13" style="position: absolute; z-index: 65; display: block; left: 88px; top: 380px; " onMouseOver="lift_up(13);" onMouseOut="lift_down(13);" onClick="pick_card(13)"><img id="img13" src="back.gif" border="0" alt=""></div>
+                <div id="L14" style="position: absolute; z-index: 64; display: block; left: 94px; top: 380px; " onMouseOver="lift_up(14);" onMouseOut="lift_down(14);" onClick="pick_card(14)"><img id="img14" src="back.gif" border="0" alt=""></div>
+                <div id="L15" style="position: absolute; z-index: 63; display: block; left: 100px; top: 379px; " onMouseOver="lift_up(15);" onMouseOut="lift_down(15);" onClick="pick_card(15)"><img id="img15" src="back.gif" border="0" alt=""></div>
+                <div id="L16" style="position: absolute; z-index: 62; display: block; left: 106px; top: 378px; " onMouseOver="lift_up(16);" onMouseOut="lift_down(16);" onClick="pick_card(16)"><img id="img16" src="back.gif" border="0" alt=""></div>
+                <div id="L17" style="position: absolute; z-index: 61; display: block; left: 112px; top: 377px; " onMouseOver="lift_up(17);" onMouseOut="lift_down(17);" onClick="pick_card(17)"><img id="img17" src="back.gif" border="0" alt=""></div>
+                <div id="L18" style="position: absolute; z-index: 60; display: block; left: 118px; top: 377px; " onMouseOver="lift_up(18);" onMouseOut="lift_down(18);" onClick="pick_card(18)"><img id="img18" src="back.gif" border="0" alt=""></div>
+                <div id="L19" style="position: absolute; z-index: 59; display: block; left: 124px; top: 376px; " onMouseOver="lift_up(19);" onMouseOut="lift_down(19);" onClick="pick_card(19)"><img id="img19" src="back.gif" border="0" alt=""></div>
+                <div id="L20" style="position: absolute; z-index: 58; display: block; left: 130px; top: 375px; " onMouseOver="lift_up(20);" onMouseOut="lift_down(20);" onClick="pick_card(20)"><img id="img20" src="back.gif" border="0" alt=""></div>
+                <div id="L21" style="position: absolute; z-index: 57; display: block; left: 136px; top: 374px; " onMouseOver="lift_up(21);" onMouseOut="lift_down(21);" onClick="pick_card(21)"><img id="img21" src="back.gif" border="0" alt=""></div>
+                <div id="L22" style="position: absolute; z-index: 56; display: block; left: 142px; top: 373px; " onMouseOver="lift_up(22);" onMouseOut="lift_down(22);" onClick="pick_card(22)"><img id="img22" src="back.gif" border="0" alt=""></div>
+                <div id="L23" style="position: absolute; z-index: 55; display: block; left: 148px; top: 372px; " onMouseOver="lift_up(23);" onMouseOut="lift_down(23);" onClick="pick_card(23)"><img id="img23" src="back.gif" border="0" alt=""></div>
+                <div id="L24" style="position: absolute; z-index: 54; display: block; left: 154px; top: 370px; " onMouseOver="lift_up(24);" onMouseOut="lift_down(24);" onClick="pick_card(24)"><img id="img24" src="back.gif" border="0" alt=""></div>
+                <div id="L25" style="position: absolute; z-index: 53; display: block; left: 160px; top: 369px; " onMouseOver="lift_up(25);" onMouseOut="lift_down(25);" onClick="pick_card(25)"><img id="img25" src="back.gif" border="0" alt=""></div>
+                <div id="L26" style="position: absolute; z-index: 52; display: block; left: 166px; top: 368px; " onMouseOver="lift_up(26);" onMouseOut="lift_down(26);" onClick="pick_card(26)"><img id="img26" src="back.gif" border="0" alt=""></div>
+                <div id="L27" style="position: absolute; z-index: 51; display: block; left: 172px; top: 366px; " onMouseOver="lift_up(27);" onMouseOut="lift_down(27);" onClick="pick_card(27)"><img id="img27" src="back.gif" border="0" alt=""></div>
+                <div id="L28" style="position: absolute; z-index: 50; display: block; left: 178px; top: 365px; " onMouseOver="lift_up(28);" onMouseOut="lift_down(28);" onClick="pick_card(28)"><img id="img28" src="back.gif" border="0" alt=""></div>
+                <div id="L29" style="position: absolute; z-index: 49; display: block; left: 184px; top: 364px; " onMouseOver="lift_up(29);" onMouseOut="lift_down(29);" onClick="pick_card(29)"><img id="img29" src="back.gif" border="0" alt=""></div>
+                <div id="L30" style="position: absolute; z-index: 48; display: block; left: 190px; top: 362px; " onMouseOver="lift_up(30);" onMouseOut="lift_down(30);" onClick="pick_card(30)"><img id="img30" src="back.gif" border="0" alt=""></div>
+                <div id="L31" style="position: absolute; z-index: 47; display: block; left: 196px; top: 360px; " onMouseOver="lift_up(31);" onMouseOut="lift_down(31);" onClick="pick_card(31)"><img id="img31" src="back.gif" border="0" alt=""></div>
+                <div id="L32" style="position: absolute; z-index: 46; display: block; left: 202px; top: 359px; " onMouseOver="lift_up(32);" onMouseOut="lift_down(32);" onClick="pick_card(32)"><img id="img32" src="back.gif" border="0" alt=""></div>
+                <div id="L33" style="position: absolute; z-index: 45; display: block; left: 208px; top: 357px; " onMouseOver="lift_up(33);" onMouseOut="lift_down(33);" onClick="pick_card(33)"><img id="img33" src="back.gif" border="0" alt=""></div>
+                <div id="L34" style="position: absolute; z-index: 44; display: block; left: 214px; top: 355px; " onMouseOver="lift_up(34);" onMouseOut="lift_down(34);" onClick="pick_card(34)"><img id="img34" src="back.gif" border="0" alt=""></div>
+                <div id="L35" style="position: absolute; z-index: 43; display: block; left: 220px; top: 353px; " onMouseOver="lift_up(35);" onMouseOut="lift_down(35);" onClick="pick_card(35)"><img id="img35" src="back.gif" border="0" alt=""></div>
+                <div id="L36" style="position: absolute; z-index: 42; display: block; left: 226px; top: 352px; " onMouseOver="lift_up(36);" onMouseOut="lift_down(36);" onClick="pick_card(36)"><img id="img36" src="back.gif" border="0" alt=""></div>
+                <div id="L37" style="position: absolute; z-index: 41; display: block; left: 232px; top: 350px; " onMouseOver="lift_up(37);" onMouseOut="lift_down(37);" onClick="pick_card(37)"><img id="img37" src="back.gif" border="0" alt=""></div>
+                <div id="L38" style="position: absolute; z-index: 40; display: block; left: 238px; top: 348px; " onMouseOver="lift_up(38);" onMouseOut="lift_down(38);" onClick="pick_card(38)"><img id="img38" src="back.gif" border="0" alt=""></div>
+                <div id="L39" style="position: absolute; z-index: 39; display: block; left: 244px; top: 345px; " onMouseOver="lift_up(39);" onMouseOut="lift_down(39);" onClick="pick_card(39)"><img id="img39" src="back.gif" border="0" alt=""></div>
+                <div id="L40" style="position: absolute; z-index: 38; display: block; left: 250px; top: 343px; " onMouseOver="lift_up(40);" onMouseOut="lift_down(40);" onClick="pick_card(40)"><img id="img40" src="back.gif" border="0" alt=""></div>
+                <div id="L41" style="position: absolute; z-index: 37; display: block; left: 256px; top: 341px; " onMouseOver="lift_up(41);" onMouseOut="lift_down(41);" onClick="pick_card(41)"><img id="img41" src="back.gif" border="0" alt=""></div>
+                <div id="L42" style="position: absolute; z-index: 36; display: block; left: 262px; top: 339px; " onMouseOver="lift_up(42);" onMouseOut="lift_down(42);" onClick="pick_card(42)"><img id="img42" src="back.gif" border="0" alt=""></div>
+                <div id="L43" style="position: absolute; z-index: 35; display: block; left: 268px; top: 336px; " onMouseOver="lift_up(43);" onMouseOut="lift_down(43);" onClick="pick_card(43)"><img id="img43" src="back.gif" border="0" alt=""></div>
+                <div id="L44" style="position: absolute; z-index: 34; display: block; left: 274px; top: 334px; " onMouseOver="lift_up(44);" onMouseOut="lift_down(44);" onClick="pick_card(44)"><img id="img44" src="back.gif" border="0" alt=""></div>
+                <div id="L45" style="position: absolute; z-index: 33; display: block; left: 280px; top: 331px; " onMouseOver="lift_up(45);" onMouseOut="lift_down(45);" onClick="pick_card(45)"><img id="img45" src="back.gif" border="0" alt=""></div>
+                <div id="L46" style="position: absolute; z-index: 32; display: block; left: 286px; top: 328px; " onMouseOver="lift_up(46);" onMouseOut="lift_down(46);" onClick="pick_card(46)"><img id="img46" src="back.gif" border="0" alt=""></div>
+                <div id="L47" style="position: absolute; z-index: 31; display: block; left: 292px; top: 326px; " onMouseOver="lift_up(47);" onMouseOut="lift_down(47);" onClick="pick_card(47)"><img id="img47" src="back.gif" border="0" alt=""></div>
+                <div id="L48" style="position: absolute; z-index: 30; display: block; left: 298px; top: 323px; " onMouseOver="lift_up(48);" onMouseOut="lift_down(48);" onClick="pick_card(48)"><img id="img48" src="back.gif" border="0" alt=""></div>
+                <div id="L49" style="position: absolute; z-index: 29; display: block; left: 304px; top: 320px; " onMouseOver="lift_up(49);" onMouseOut="lift_down(49);" onClick="pick_card(49)"><img id="img49" src="back.gif" border="0" alt=""></div>
+                <div id="L50" style="position: absolute; z-index: 28; display: block; left: 310px; top: 317px; " onMouseOver="lift_up(50);" onMouseOut="lift_down(50);" onClick="pick_card(50)"><img id="img50" src="back.gif" border="0" alt=""></div>
+                <div id="L51" style="position: absolute; z-index: 27; display: block; left: 316px; top: 314px; " onMouseOver="lift_up(51);" onMouseOut="lift_down(51);" onClick="pick_card(51)"><img id="img51" src="back.gif" border="0" alt=""></div>
+                <div id="L52" style="position: absolute; z-index: 26; display: block; left: 322px; top: 310px; " onMouseOver="lift_up(52);" onMouseOut="lift_down(52);" onClick="pick_card(52)"><img id="img52" src="back.gif" border="0" alt=""></div>
+                <div id="L53" style="position: absolute; z-index: 25; display: block; left: 328px; top: 307px; " onMouseOver="lift_up(53);" onMouseOut="lift_down(53);" onClick="pick_card(53)"><img id="img53" src="back.gif" border="0" alt=""></div>
+                <div id="L54" style="position: absolute; z-index: 24; display: block; left: 334px; top: 303px; " onMouseOver="lift_up(54);" onMouseOut="lift_down(54);" onClick="pick_card(54)"><img id="img54" src="back.gif" border="0" alt=""></div>
+                <div id="L55" style="position: absolute; z-index: 23; display: block; left: 340px; top: 300px; " onMouseOver="lift_up(55);" onMouseOut="lift_down(55);" onClick="pick_card(55)"><img id="img55" src="back.gif" border="0" alt=""></div>
+                <div id="L56" style="position: absolute; z-index: 22; display: block; left: 346px; top: 296px; " onMouseOver="lift_up(56);" onMouseOut="lift_down(56);" onClick="pick_card(56)"><img id="img56" src="back.gif" border="0" alt=""></div>
+                <div id="L57" style="position: absolute; z-index: 21; display: block; left: 352px; top: 292px; " onMouseOver="lift_up(57);" onMouseOut="lift_down(57);" onClick="pick_card(57)"><img id="img57" src="back.gif" border="0" alt=""></div>
+                <div id="L58" style="position: absolute; z-index: 20; display: block; left: 358px; top: 288px; " onMouseOver="lift_up(58);" onMouseOut="lift_down(58);" onClick="pick_card(58)"><img id="img58" src="back.gif" border="0" alt=""></div>
+                <div id="L59" style="position: absolute; z-index: 19; display: block; left: 364px; top: 284px; " onMouseOver="lift_up(59);" onMouseOut="lift_down(59);" onClick="pick_card(59)"><img id="img59" src="back.gif" border="0" alt=""></div>
+                <div id="L60" style="position: absolute; z-index: 18; left: 370px; top: 280px; display: block; " onMouseOver="lift_up(60);" onMouseOut="lift_down(60);" onClick="pick_card(60)"><img id="img60" src="back.gif" border="0" alt=""></div>
+                <div id="L61" style="position: absolute; z-index: 17; display: block; left: 376px; top: 275px; " onMouseOver="lift_up(61);" onMouseOut="lift_down(61);" onClick="pick_card(61)"><img id="img61" src="back.gif" border="0" alt=""></div>
+                <div id="L62" style="position: absolute; z-index: 16; display: block; left: 382px; top: 270px; " onMouseOver="lift_up(62);" onMouseOut="lift_down(62);" onClick="pick_card(62)"><img id="img62" src="back.gif" border="0" alt=""></div>
+                <div id="L63" style="position: absolute; z-index: 15; left: 388px; top: 266px; display: block; " onMouseOver="lift_up(63);" onMouseOut="lift_down(63);" onClick="pick_card(63)"><img id="img63" src="back.gif" border="0" alt=""></div>
+                <div id="L64" style="position: absolute; z-index: 14; display: block; left: 394px; top: 260px; " onMouseOver="lift_up(64);" onMouseOut="lift_down(64);" onClick="pick_card(64)"><img id="img64" src="back.gif" border="0" alt=""></div>
+                <div id="L65" style="position: absolute; z-index: 13; display: block; left: 400px; top: 255px; " onMouseOver="lift_up(65);" onMouseOut="lift_down(65);" onClick="pick_card(65)"><img id="img65" src="back.gif" border="0" alt=""></div>
+                <div id="L66" style="position: absolute; z-index: 12; display: block; left: 406px; top: 249px; " onMouseOver="lift_up(66);" onMouseOut="lift_down(66);" onClick="pick_card(66)"><img id="img66" src="back.gif" border="0" alt=""></div>
+                <div id="L67" style="position: absolute; z-index: 11; display: block; left: 412px; top: 243px; " onMouseOver="lift_up(67);" onMouseOut="lift_down(67);" onClick="pick_card(67)"><img id="img67" src="back.gif" border="0" alt=""></div>
+                <div id="L68" style="position: absolute; z-index: 10; display: block; left: 418px; top: 237px; " onMouseOver="lift_up(68);" onMouseOut="lift_down(68);" onClick="pick_card(68)"><img id="img68" src="back.gif" border="0" alt=""></div>
+                <div id="L69" style="position: absolute; z-index: 9; display: block; left: 424px; top: 231px; " onMouseOver="lift_up(69);" onMouseOut="lift_down(69);" onClick="pick_card(69)"><img id="img69" src="back.gif" border="0" alt=""></div>
+                <div id="L70" style="position: absolute; z-index: 8; display: block; left: 430px; top: 224px; " onMouseOver="lift_up(70);" onMouseOut="lift_down(70);" onClick="pick_card(70)"><img id="img70" src="back.gif" border="0" alt=""></div>
+                <div id="L71" style="position: absolute; z-index: 7; display: block; left: 436px; top: 216px; " onMouseOver="lift_up(71);" onMouseOut="lift_down(71);" onClick="pick_card(71)"><img id="img71" src="back.gif" border="0" alt=""></div>
+                <div id="L72" style="position: absolute; z-index: 6; display: block; left: 442px; top: 208px; " onMouseOver="lift_up(72);" onMouseOut="lift_down(72);" onClick="pick_card(72)"><img id="img72" src="back.gif" border="0" alt=""></div>
+                <div id="L73" style="position: absolute; z-index: 5; display: block; left: 448px; top: 199px; " onMouseOver="lift_up(73);" onMouseOut="lift_down(73);" onClick="pick_card(73)"><img id="img73" src="back.gif" border="0" alt=""></div>
+                <div id="L74" style="position: absolute; z-index: 4; display: block; left: 454px; top: 190px; " onMouseOver="lift_up(74);" onMouseOut="lift_down(74);" onClick="pick_card(74)"><img id="img74" src="back.gif" border="0" alt=""></div>
+                <div id="L75" style="position: absolute; z-index: 3; display: block; left: 460px; top: 179px; " onMouseOver="lift_up(75);" onMouseOut="lift_down(75);" onClick="pick_card(75)"><img id="img75" src="back.gif" border="0" alt=""></div>
+                <div id="L76" style="position: absolute; z-index: 2; display: block; left: 466px; top: 166px; " onMouseOver="lift_up(76);" onMouseOut="lift_down(76);" onClick="pick_card(76)"><img id="img76" src="back.gif" border="0" alt=""></div>
+                <div id="L77" style="position: absolute; z-index: 1; display: block; left: 472px; top: 152px; " onMouseOver="lift_up(77);" onMouseOut="lift_down(77);" onClick="pick_card(77)"><img id="img77" src="back.gif" border="0" alt=""></div>
+                <div id="L78" style="position: absolute; z-index: 0; display: block; left: 478px; top: 132px; " onMouseOver="lift_up(78);" onMouseOut="lift_down(78);" onClick="pick_card(78)"><img id="img78" src="back.gif" border="0" alt=""></div>
+                <div id="H0" style="position:absolute; width:300px; height:50px; left:50px; top:40px; display:none; z-index:100;" onMouseOver="show_text(0);" onMouseOut="hide_text(0);"><img id="emg2" src="back.gif" border="0" alt=""></div>
+                <div id="E0" style="position:absolute; width:300px; height:400px; left:50px; top:100px; display:none; z-index:100;" onMouseOver="show_text(0);" onMouseOut="hide_text(0);"><img id="emg0" src="back.gif" border="0" alt=""></div>
+                <div id="E1" style="position:absolute; left:0px; top:0px; display:none; z-index:101;" onMouseOver="show_text(1);" onMouseOut="hide_text(1);"><img id="emg1" src="back.gif" border="0" alt=""></div>
+			</div><!-- xxx -->
+            </div>
+        </div>
+	</div>
+    	<div style="display: none; " id="hiddenlpsubmitdiv"></div>
+		<script>try{for(var lastpass_iter=0; lastpass_iter < document.forms.length; lastpass_iter++){ var lastpass_f = document.forms[lastpass_iter]; if(typeof(lastpass_f.lpsubmitorig2)=="undefined"){ lastpass_f.lpsubmitorig2 = lastpass_f.submit; lastpass_f.submit = function(){ var form=this; var customEvent = document.createEvent("Event"); customEvent.initEvent("lpCustomEvent", true, true); var d = document.getElementById("hiddenlpsubmitdiv"); for(var i = 0; i < document.forms.length; i++){ if(document.forms[i]==form){ d.innerText=i; } } d.dispatchEvent(customEvent); form.lpsubmitorig2(); } } }}catch(e){}</script></body></html>

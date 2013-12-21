@@ -1,0 +1,234 @@
+/*--- Basic Tags ---*/
+.iberka_blue {	
+	font-family:			Verdana, Arial, Helvetica, sans-serif;
+	color:					#003399;
+}
+.iberka_grey {
+	font-family:			Verdana, Arial, Helvetica, sans-serif;
+	color:					#999999;
+}
+body {
+	margin:					0px;
+	border:					none;
+	padding:				10px;
+	font-family:			Arial, Helvetica, sans-serif;
+	color:					#000000;
+}
+body, th, td, p {
+	font-size:				0.9em;
+}
+a {
+	text-decoration:		none;
+}
+
+
+/*--- Basic classes ---*/
+.page_main {
+	width:					100%;
+	margin:					0px;
+	border:					none;
+	padding:				0px;
+}
+.page_title {}
+.page_menue {}
+.page_content {}
+.content_main {}
+.content_title {}
+.content_menue {}
+.content_text {
+	width:					100%;
+	margin:					0px;
+	border:					none;
+	padding:				0px;
+}
+div.content_text_msg {
+	padding:				10px;
+	border:					2px #050055 solid;
+	color:					#050055;
+	text-align:				left;
+	line-height:			180%;
+	z-index:				999;
+}
+.page_footer {}
+
+
+
+/*--- Special id's of basic classes ---*/
+#content_text_form {
+	margin:					0px;
+	border:					none;
+	padding:				0px;
+	z-index:				1;
+}
+#tarot_tutorial {
+	position:				absolute;
+	top:					85px;
+	left:					15px;
+	margin:					0px;
+	border:					none;
+	padding:				0px;
+	z-index:				3;
+}
+#tarot_readings {
+	position:				absolute;
+	top:					10px;
+	left:					15px;
+	width:					350px;
+	margin:					0px;
+	border:					none;
+	padding:				0px;
+	z-index:				2;
+}
+
+
+
+/*--- Basic Elements ---*/
+div.content_text_msg ul {
+	padding:				0px 0px 0px 10px;
+}
+div.content_text_msg li {
+	padding:				5px 0px 0px 0px;
+}
+p.common_author, p.common_icons {
+	margin:					0;
+	padding:				0;
+	font-size:				10px;
+	text-align:				right;
+}
+p.common_author span {
+	font-size:				10px;
+}
+
+
+
+/*--- Basic Elements: Forms & AutoList ---*/
+td.common_input_header {
+	text-align:				center;
+}
+td#tarot_input_header_common {
+	font-weight:			bold;
+	text-align:				left;
+}
+.common_input_caption {
+	font-weight:			bold;
+	text-align:				right;
+}
+.common_input_text, .common_input_select, .common_input_select_center, 
+.common_filter_text, .common_filter_select, .common_filter_select_center {
+	margin:					0px 0px 3px 0px;
+	border:					1px solid #330066;
+	padding:				2px 1px;
+	font-family:			Arial, Helvetica, sans-serif; /* */
+	font-size:				x-small;
+	font-weight:			normal;
+}
+input.common_input_text, .common_input_select, .common_input_select_center, 
+input.common_filter_text, .common_filter_select, .common_filter_select_center {
+	background-image:		 url("../pic/layout/common/bg_textbox.jpg");
+	background-repeat:		no-repeat;
+}
+textarea.common_input_text, textarea.common_filter_text {
+	background-image:		 url("../pic/layout/common/bg_textarea.jpg");
+	background-repeat:		no-repeat;
+}
+.common_input_select, .common_input_select_center, .common_filter_select, .common_filter_select_center {
+	padding:				0px;
+}
+table.common_list {
+	border:					1px solid #330066;
+	border-collapse:		collapse;
+	border-spacing:			0px;
+}
+table#list_tarot_kartenlegen {
+	border:					0px;
+}
+table.common_list td {
+	font-size:				0.8em;
+}
+td.common_pager {
+	text-align:				center;
+	color:					#FFFFFF;
+	background-color:		#330066;
+}
+th.common_list_sum {
+	border-top:				1px solid #330066;
+}
+th.common_list_header {
+	padding:				5px 3px;
+	vertical-align:			top;
+	text-align:				center;
+	color:					#FFFFFF;
+	background-color:		#330066;
+}
+th.common_list_filter {
+	border-right:			1px dashed #330066; /* */
+	padding:				0px;
+	vertical-align:			top;
+}
+th.common_list_group {
+	border-right:			1px dashed #330066; /* */
+	border-bottom:			1px solid #330066; /* */
+	padding:				0px;
+}
+table#list_tarot_kartenlegen th {
+	border-right:			0px; /* */
+}
+table#list_user th.common_list_filter, table#list_tarot_legesysteme th, table#list_services th {
+	border-bottom:			1px solid #330066; /* */
+}
+#list_header_Kurzname, #list_header_AnzKarten {
+	width:					100px;
+}
+td.common_list, td.common_list_num, td.common_list_center {
+	padding:				5px 3px;
+	vertical-align:			top;
+}
+td.common_list_center {
+	text-align:				center;
+}
+td.common_list_num {
+	text-align:				right;
+}
+table#list_tarot_legesysteme td {
+	border-right:			1px dashed #330066; /* */
+}
+
+
+
+/*--- Special Elements ---*/
+td#tarot_spreads_list {
+	padding:				5px;
+}
+img#tarot_show {
+	margin:					0px 10px 10px 0px;
+	text-align:				left;
+}
+span.tarot_card_title {
+	display:				none;
+	font-weight:			bold;
+}
+span.tarot_card_name {
+	display:				block;
+	padding-top:			10px;
+	font-weight:			bold;
+	color:					#330066;
+}
+
+
+
+/*--- Links ---*/
+a:link, a:visited {
+	color:					#000000;
+}
+a:hover, a:active{
+	color:					#000000;
+}
+a.common_linkcolor {
+	font-weight:			bold;
+	white-space:			nowrap;
+	color:					#1463FF;
+}
+th.common_list_header a {
+	color:					#ffffff;
+	text-decoration:		none;
+}
